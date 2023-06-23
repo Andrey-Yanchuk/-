@@ -1,0 +1,597 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->
+<html lang="ru">
+<!--Заголовок страницы, контейнер для других важных данных (не отборажается)-->
+
+<head>
+    <!--Заголовок страницы, в браузере-->
+    <title>Запись на приём к врачу</title>
+    <!--Подключаем слайдер свайпер-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!--Подключаем CSS-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <!--Кодировка страницы-->
+    <meta charset="UTF-8">
+    <!--Подключение слайдера-свайпера в HTML-->
+    <link rel="icon" href="img/header/medicine.ico" type="image/x-icon">
+</head>
+<!--Отображаемое тело страницы-->
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="header__top lock-padding">
+                <div class="header__container_top _container">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <div href="" class="menu__text">Понедельник - Пятница: 08:00 - 20:00</div>
+                            </li>
+                            <li class="menu__item">
+                                <div href="" class="menu__text">Суббота: 09:00 - 18:00</div>
+                            </li>
+                            <li class="menu__item">
+                                <div href="" class="menu__text">Воскресенье: 09:00 - 16:00</div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#popup" class="header__user user-header popup-link">
+                        <div class="user-header__image"><img src="img/header/user.png" alt="user"></div>
+                        <span>Личный кабинет<span>
+                    </a>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__container_bottom _container">
+                    <div class="header__row">
+                        <div class="header__column column-header">
+                            <div class="column-header__item">
+                                <a href="" class="column-header__logo _ibg">
+                                    <img src="img/header/logo.jpg" alt="logotip">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__column column-header">
+                            <div class="column-header__item">
+                                <div class="column-header__contacts contacts-header">
+                                    <a href="tel:122" class="contacts-header__item contacts-header__item_umrcs">122</a>
+                                </div>
+                                <p class="column-header__text">Единая медицинская справочная <br>
+                                    служба города Барнаул</p>
+                            </div>
+                            <div class="column-header__item">
+                                <div class="column-header__contacts contacts-header">
+                                    <a href="tel:103" class="contacts-header__item contacts-header__item_uc">103</a>
+                                </div>
+                                <p class="column-header__text">Неотложная помощь</p>
+                            </div>
+                        </div>
+                        <div class="header__column column-header">
+                            <div class="column-header__item">
+                                <div class="column-header__contacts contacts-header">
+                                    <a href="tel:74951220221"
+                                        class="contacts-header__item contacts-header__item_umrscb">+7 (495)
+                                        122-02-21
+                                    </a>
+                                </div>
+                                <p class="column-header__text">Единая медицинская справочная<br>
+                                    служба города Барнаул <br>(для
+                                    звонков из Алтайского края)</p>
+                            </div>
+                        </div>
+                        <div class="header__column column-header">
+                            <div class="column-header__item">
+                                <div class="column-header__search-box search">
+                                    <input class="search-txt" type="text" placeholder="Я ищу...">
+                                    <button class="search-form__btn">
+                                        <img width="20px" height="20px" src="img/header/search.svg" alt="search">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="header__column__social social">
+                                <a href="" class="social__item">
+                                    <img src="img/header/viber.png" alt="viber">
+                                </a>
+                                <a href="" class="social__item">
+                                    <img src="img/header/mail.png" alt="mail">
+                                </a>
+                                <a href="" class="social__item">
+                                    <img src="img/header/classmates.png" alt="classmates">
+                                </a>
+                                <a href="" class="social__item">
+                                    <img src="img/header/vk.png" alt="vk">
+                                </a>
+                                <a href="" class="social__item">
+                                    <img src="img/header/telegram.png" alt="telegram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="page__buttons buttons">
+                <div class="buttons__container _container">
+                    <div class="buttons-row fast-link-top">
+                        <div class="fast-link-top__items">
+                            <a href="clinicalexamination.html" class="fast-link-top__item">Диспансеризация</a>
+                        </div>
+                        <div class="fast-link-top__items">
+                            <a href="paidservices.html" class="fast-link-top__item">Платные услуги</a>
+                        </div>
+                        <div class="fast-link-top__items">
+                            <a href="" class="fast-link-top__item">Обслуживаемые адреса</a>
+                        </div>
+                        <div class="fast-link-top__items">
+                            <a href="" class="fast-link-top__item">Контакты</a>
+                        </div>
+                    </div>
+                    <!--Слайдер-->
+                    <div class="wrapper__slide">
+                        <div class="image-slider swiper-container">
+                            <div class="image-slider__wrapper swiper-wrapper">
+                                <div class="image-slider__slide swiper-slide">
+                                    <a href="" class="image-slider__image _ibg">
+                                        <img src="img/swiper-slider/new-clinic.jpg" alt="new-clinic">
+                                    </a>
+                                </div>
+                                <div class="image-slider__slide swiper-slide">
+                                    <a href="" class="image-slider__image _ibg">
+                                        <img src="img/swiper-slider/doctor-appointment.jpg" alt="doctor-appointment">
+                                    </a>
+                                </div>
+                                <div class="image-slider__slide swiper-slide">
+                                    <a href="" class="image-slider__image _ibg">
+                                        <img src="img/swiper-slider/clinic-app.jpg" alt="clinic-app">
+                                    </a>
+                                </div>
+                                <div class="image-slider__slide swiper-slide">
+                                    <a href="" class="image-slider__image _ibg">
+                                        <img src="img/swiper-slider/important-information.jpg"
+                                            alt="important-information">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="buttons-row fast-link-bottom">
+                        <div class="fast-link-bottom__items">
+                            <a href="" class="fast-link-bottom__item">Прикрепление</a>
+                        </div>
+                        <div class="fast-link-bottom__items">
+                            <a href="making.html" class="fast-link-bottom__item">Записаться к врачу</a>
+                        </div>
+                        <div class="fast-link-bottom__items">
+                            <a href="" class="fast-link-bottom__item">Расписание врачей</a>
+                        </div>
+                    </div>
+
+                    <div class="banner__image">
+                        <a href="" class="banner-link _ibg">
+                            <img src="img/swiper-slider/banner.jpg" alt="banner">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="page__main main">
+                <div class="main__container _container">
+                    <div class="main__body">
+                        <div class="main__menu main-menu">
+                            <div class="main-menu__list">
+                                <a href="index.html" class="main-menu__link">Главная</a>
+                                <a href="" class="main-menu__link">О поликлинике</a>
+                                <a href="" class="main-menu__link">Администрация</a>
+                                <a href="" class="main-menu__link">Персонал</a>
+                                <a href="" class="main-menu__link">Обслуживаемые адреса</a>
+                                <a href="" class="main-menu__link">Участки</a>
+                                <a href="" class="main-menu__link">Расписание врачей</a>
+                                <a href="" class="main-menu__link">Нормативные документы</a>
+                                <a href="" class="main-menu__link">Прикрепление к поликлинике</a>
+                                <a href="paidservices.html" class="main-menu__link">Платные услуги</a>
+                                <a href="" class="main-menu__link">Вопросы и предложения</a>
+                                <a href="" class="main-menu__link">Вакансии</a>
+                            </div>
+                        </div>
+                        <div class="main__content main-content">
+                            <div class="main-content__news news">
+                                <div class="news__header">
+                                    <h1 class="news__title">Новости</h1>
+                                    <hr class="green">
+                                </div>
+                                <div class="news__body">
+                                    <article class="news__card card-news">
+                                        <h2 class="card-news__subtitle">
+                                            Всемирный день борьбы со СПИДом – 1 декабря 2022 года
+                                        </h2>
+                                        <a href="" class="card-news__link">Читать</a>
+                                        <hr>
+                                    </article>
+
+                                    <article class="news__card card-news">
+                                        <h2 class="card-news__subtitle">Международный день борьбы с ожирением</h2>
+                                        <a href="" class="card-news__link">Читать</a>
+                                        <hr>
+                                    </article>
+
+                                    <article class="news__card card-news">
+                                        <h2 class="card-news__subtitle">О вреде курения</h2>
+                                        <a href="" class="card-news__link">Читать</a>
+                                        <hr>
+                                    </article>
+
+                                    <article class="news__card card-news">
+                                        <h2 class="card-news__subtitle">
+                                            Что делать, если налоговое уведомление не получено
+                                        </h2>
+                                        <a href="" class="card-news__link">Читать</a>
+                                        <hr>
+                                    </article>
+
+                                    <article class="news__card card-news">
+                                        <h2 class="card-news__subtitle">
+                                            Что делать, если в налоговом уведомлении некорректная информация
+                                        </h2>
+                                        <a href="" class="card-news__link">Читать</a>
+                                        <hr>
+                                    </article>
+
+                                    <article class="news__card card-news">
+                                        <h2 class="card-news__subtitle">Профилактика сахарного диабета</h2>
+                                        <a href="" class="card-news__link">Читать</a>
+                                        <hr>
+                                    </article>
+                                    <span id="dots"></span> <span id="more">
+                                        <article class="news__card card-news">
+                                            <h2 class="card-news__subtitle">День матери</h2>
+                                            <a href="" class="card-news__link">Читать</a>
+                                            <hr>
+                                        </article>
+
+                                        <article class="news__card card-news">
+                                            <h2 class="card-news__subtitle">Международный день инвалидов</h2>
+                                            <a href="" class="card-news__link">Читать</a>
+                                            <hr>
+                                        </article>
+
+                                        <article class="news__card card-news">
+                                            <h2 class="card-news__subtitle">Неделя ответственного отношения к здоровью
+                                            </h2>
+                                            <a href="" class="card-news__link">Читать</a>
+                                            <hr>
+                                        </article>
+
+                                        <article class="news__card card-news">
+                                            <h2 class="card-news__subtitle">
+                                                Грипп: что известно о вирусе, вакцинация, лечение
+                                            </h2>
+                                            <a href="" class="card-news__link">Читать</a>
+                                            <hr>
+                                        </article>
+                                    </span>
+                                    <button id="btn" onclick="readMore()">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__dzm-nav dzm-nav">
+                <div class="dzm-nav__container _container">
+                    <div class="dzm-nav__body">
+                        <div class="dzm-nav__logo">
+                            <img src="img/navigation/nav-logo.svg" alt="navigator-logo">
+                        </div>
+                        <div class="dzm-nav__row">
+                            <div class="dzm-nav__column">
+                                <article class="dzm-nav__item item-card">
+                                    <a href="" class="item-card__link">
+                                        <div class="item-card__image _ibg">
+                                            <img src="img/navigation/table.jpg" alt="table">
+                                        </div>
+                                        <h3 class="item-card__subtitle">
+                                            Как получить бесплатные лекарства
+                                        </h3>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="dzm-nav__column">
+                                <article class="dzm-nav__item item-card">
+                                    <a href="" class="item-card__link">
+                                        <div class="item-card__image _ibg">
+                                            <img src="img/navigation/reception.jpg" alt="reception">
+                                        </div>
+                                        <h3 class="item-card__subtitle">
+                                            Как подготовиться к холтеровскому
+                                            мониторированию ЭКГ
+                                        </h3>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="dzm-nav__column">
+                                <article class="dzm-nav__item item-card">
+                                    <a href="" class="item-card__link">
+                                        <div class="item-card__image _ibg">
+                                            <img src="img/navigation/emotional_burnout.jpg" alt="emotional burnout">
+                                        </div>
+                                        <h3 class="item-card__subtitle">
+                                            Эмоциональное выгорание: причины появления и
+                                            клинические симптомы
+                                        </h3>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="dzm-nav__column">
+                                <article class="dzm-nav__item item-card">
+                                    <a href="" class="item-card__link">
+                                        <div class="item-card__image _ibg">
+                                            <img src="img/navigation/physical_form.jpg" alt="physical form">
+                                        </div>
+                                        <h3 class="item-card__subtitle">
+                                            Восстановление физической формы после COVID-19
+                                        </h3>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container _container">
+                <div class="footer__row">
+                    <div class="footer-column">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">COVID19</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Аптеки</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Архив новостей</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Бесплатная медицинская помощь</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Вакансии</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Вакцинация</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Видеоматериалы</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Виды медицинской помощи</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Волонтерская деятельность</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Вопрос - Ответ</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Высокотехнологичная помощь</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Вышестоящие и контролирующие органы</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Госпитализация</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Государственные гарантии</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">График приёма граждан</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Диспансеризация</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Доступная среда</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Запись на приём к врачу</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer-column">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Контакты</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Лекарственные препараты</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Льготному населению</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Медицинский туризм</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Московский врач</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Национальный календарь профилактических
+                                        прививок</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Наши специалисты</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Независимая оценка качества</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Нормативно-правовая документация</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Обратиться к Главному врачу</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Обслуживаемые адреса</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Общественный совет</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Отзывы пациентов</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Платные услуги</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Подготовка к исследованиям</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Показатели доступности и качества</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Полезная информация</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Порядки оказания медицинской помощи</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="footer-column">
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Порядок направления на МСЭ</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Права и обязанности граждан</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Правила внутреннего распорядка</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Прикрепление</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Противодействие коррупции</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Расписание врачей</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Режим и график работы</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Сведения о медицинской организации</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Специальная оценка условий труда</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Стандарты медицинской помощи</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Столичное здравоохранение</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Страховые компании</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Структура</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Укрепление общественного здоровья</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Участки</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Учредительные документы</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Фотогалерея</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a href="" class="menu-footer__link">Школа здоровья</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content content-popup">
+                <div class="content-popup__header">
+                    <h2 class="popup__title">Форма регистрации</h2>
+                    <a href="#header" class="popup__close close-popup">X</a>
+                </div>
+                <div class="content-popup__body">
+                    <form action="check.php" method="post" class="form">
+                        <input type="text" name="login" id="login" class="form-contol" placeholder="Введите логин">
+                        <input type="text" name="name" id="name" class="form-contol" placeholder="Введите имя">
+                        <input type="password" name="pass" id="pass" class="form-contol" placeholder="Введите пароль">
+                        <div class="popup__group">
+                            <button type="submit" class="button">Зарегистрироваться</button>
+                            <a href="#popup_2" class="popup__user popup-link">Авторизоваться</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup_2" class="popup">
+        <div class="popup__body">
+            <div class="popup__content content-popup">
+                <div class="content-popup__header">
+                    <h2 class="popup__title">Форма авторизации</h2>
+                    <a href="#header" class="popup__close close-popup">X</a>
+                </div>
+                <div class="content-popup__body">
+                    <form action="auth.php" method="post" class="form">
+                        <input type="text" name="login" id="login" class="form-contol" placeholder="Введите логин">
+                        <input type="password" name="pass" id="pass" class="form-contol" placeholder="Введите пароль">
+                        <div class="popup__group">
+                            <button type="submit" class="button">Авторизоваться</button>
+                            <a href="#popup" class="popup__user popup-link">Зарегистрироваться</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Подключение слайдера-свайпера для JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <!--Подключение JS-->
+    <script src="js/script.js"></script>
+    <script src="js/popups.js"></script>
+
+</body>
+
+</html>
